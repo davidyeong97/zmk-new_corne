@@ -61,7 +61,7 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - '&msc SCROLL_UP'
+  - Ctl+ $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
@@ -74,7 +74,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - '&msc SCROLL_DOWN'
+  - Ctl+ $$mdi:arrow-down-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
