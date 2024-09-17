@@ -253,3 +253,6 @@ combos:
 - p: [13, 14]
   k: $$mdi:keyboard-tab$$
   l: [Gaming]
+- p: [41, 42]
+  k: $$mdi:apple-keyboard-option$$
+  l: [Gaming]
