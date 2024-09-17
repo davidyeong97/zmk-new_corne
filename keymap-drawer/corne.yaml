@@ -248,3 +248,8 @@ layers:
 combos:
 - p: [11, 12]
   k: $$mdi:backspace-reverse-outline$$
+- p: [0, 1]
+  k: $$mdi:keyboard-esc$$
+- p: [13, 14]
+  k: $$mdi:keyboard-tab$$
+  l: [Gaming]
