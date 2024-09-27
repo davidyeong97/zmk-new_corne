@@ -62,8 +62,8 @@
             layers = <4>;
         };
 
-        Alt {
-            bindings = <&kp LEFT_ALT>;
+        Gaming_G {
+            bindings = <&kp G>;
             key-positions = <41 42>;
             layers = <4>;
         };
@@ -181,11 +181,11 @@
 
         Gaming {
             bindings = <
-&kp N4          &kp NUMBER_3  &kp Q   &kp W  &kp E      &kp R        &trans  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &to 0
-&kp N2          &kp N1        &kp A   &kp S  &kp D      &kp F        &trans  &kp F5  &kp F6  &kp F7  &kp F8  &trans  &trans
-&kp LEFT_SHIFT  &kp Z         &kp X   &kp C  &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &kp G  &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans
-                                                                     &trans
+&kp N4  &kp NUMBER_3    &kp Q   &kp W         &kp E      &kp R        &trans  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &to 0
+&kp N2  &kp N1          &kp A   &kp S         &kp D      &kp F        &trans  &kp F5  &kp F6  &kp F7  &kp F8  &trans  &trans
+&kp Z   &kp LEFT_SHIFT  &kp X   &kp C         &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans
+                                                                      &trans
             >;
 
             label = "Gaming";
