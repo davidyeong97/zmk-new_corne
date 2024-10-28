@@ -102,7 +102,7 @@
         compatible = "zmk,keymap";
 
         WIN {
-            display-name = "BASE";
+            display-name = "WIN";
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  | BKSP |
@@ -119,9 +119,7 @@
                                                                     &mkp MB1
             >;
 
-            display-name = "QWERTY";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-            label = "WIN";
         };
 
         Navigation {
@@ -193,7 +191,7 @@
         };
 
         MAC {
-            display-name = "BASE";
+            display-name = "MAC";
             bindings = <
 &kp TAB  &as Q  &as W             &as E         &as R  &as T           &mmv MOVE_UP     &as Y      &as U  &as I      &as O    &as P     &kp BSPC
 &kp ESC  &as A  &as S             &as D         &as F  &as G           &mmv MOVE_DOWN   &as H      &as J  &as K      &as L    &as SEMI  &as SQT
