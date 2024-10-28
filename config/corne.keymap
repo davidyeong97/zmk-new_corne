@@ -51,12 +51,12 @@
             key-positions = <11 12>;
         };
 
-        Esc {
+        Gaming_Esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
 
-        Tab {
+        Gaming_Tab {
             bindings = <&kp TAB>;
             key-positions = <13 14>;
             layers = <4>;
@@ -101,7 +101,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        WIN {
             display-name = "BASE";
 
             // --------------------------------------------------------------------------------
@@ -121,6 +121,7 @@
 
             display-name = "QWERTY";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            label = "WIN";
         };
 
         Navigation {
@@ -171,7 +172,7 @@
             //                    | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
 
             bindings = <
-&trans  &none            &none           &none              &none             &none              &trans  &none            &none            &none            &none            &none  &to 4
+&trans  &none            &none           &none              &none             &none              &trans  &none            &none            &none            &to 0            &to 5  &to 4
 &trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3       &trans  &out OUT_USB     &out OUT_BLE     &none            &none            &none  &none
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &none  &none
                          &trans          &trans             &trans            &trans             &trans  &trans           &trans           &trans
@@ -181,14 +182,28 @@
 
         Gaming {
             bindings = <
-&kp N4  &kp NUMBER_3    &kp Q   &kp W         &kp E      &kp R        &trans  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &to 0
-&kp N2  &kp N1          &kp A   &kp S         &kp D      &kp F        &trans  &kp F5  &kp F6  &kp F7  &kp F8  &trans  &trans
-&kp Z   &kp LEFT_SHIFT  &kp X   &kp C         &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans
+&kp N4  &kp NUMBER_3    &kp Q   &kp W         &kp E      &kp R        &kp UP_ARROW     &kp F1  &kp F2  &kp F3  &kp F4  &trans  &to 0
+&kp N2  &kp N1          &kp A   &kp S         &kp D      &kp F        &kp DOWN_ARROW   &kp F5  &kp F6  &kp F7  &kp F8  &trans  &trans
+&kp Z   &kp LEFT_SHIFT  &kp X   &kp C         &kp V      &kp B        &kp LEFT_ARROW   &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE    &kp RIGHT_ARROW  &trans  &trans  &trans
                                                                       &trans
             >;
 
             label = "Gaming";
+        };
+
+        MAC {
+            display-name = "BASE";
+            bindings = <
+&kp TAB  &as Q  &as W             &as E         &as R  &as T           &mmv MOVE_UP     &as Y      &as U  &as I      &as O    &as P     &kp BSPC
+&kp ESC  &as A  &as S             &as D         &as F  &as G           &mmv MOVE_DOWN   &as H      &as J  &as K      &as L    &as SEMI  &as SQT
+&td0     &as Z  &as X             &as C         &as V  &as B           &mmv MOVE_LEFT   &as N      &as M  &as COMMA  &as DOT  &as FSLH  &kp ENTER
+                &kp C_PLAY_PAUSE  &kp LEFT_ALT  &mo 2  &kp LEFT_GUI    &mmv MOVE_RIGHT  &kp SPACE  &mo 1  &kp LCTRL
+                                                                       &mkp MB1
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            label = "MAC";
         };
     };
 
