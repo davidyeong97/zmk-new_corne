@@ -49,6 +49,55 @@ layers:
   - NAV
   - $$mdi:apple-keyboard-command$$
   - '&mkp MB1'
+  MAC:
+  - $$mdi:keyboard-tab$$
+  - '&as Q'
+  - '&as W'
+  - '&as E'
+  - '&as R'
+  - '&as T'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&as Y'
+  - '&as U'
+  - '&as I'
+  - '&as O'
+  - '&as P'
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-esc$$
+  - '&as A'
+  - '&as S'
+  - '&as D'
+  - '&as F'
+  - '&as G'
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&as H'
+  - '&as J'
+  - '&as K'
+  - '&as L'
+  - '&as SEMI'
+  - '&as SQT'
+  - '&td0'
+  - '&as Z'
+  - '&as X'
+  - '&as C'
+  - '&as V'
+  - '&as B'
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&as N'
+  - '&as M'
+  - '&as COMMA'
+  - '&as DOT'
+  - '&as FSLH'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - PLAY PAUSE
+  - $$mdi:apple-keyboard-option$$
+  - SYMBOL
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:keyboard-space$$
+  - NAV
+  - $$mdi:apple-keyboard-control$$
+  - '&mkp MB1'
   NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -245,55 +294,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  MAC:
-  - $$mdi:keyboard-tab$$
-  - '&as Q'
-  - '&as W'
-  - '&as E'
-  - '&as R'
-  - '&as T'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&as Y'
-  - '&as U'
-  - '&as I'
-  - '&as O'
-  - '&as P'
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-esc$$
-  - '&as A'
-  - '&as S'
-  - '&as D'
-  - '&as F'
-  - '&as G'
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '&as H'
-  - '&as J'
-  - '&as K'
-  - '&as L'
-  - '&as SEMI'
-  - '&as SQT'
-  - '&td0'
-  - '&as Z'
-  - '&as X'
-  - '&as C'
-  - '&as V'
-  - '&as B'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - '&as N'
-  - '&as M'
-  - '&as COMMA'
-  - '&as DOT'
-  - '&as FSLH'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - PLAY PAUSE
-  - $$mdi:apple-keyboard-option$$
-  - SYMBOL
-  - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:keyboard-space$$
-  - NAV
-  - $$mdi:apple-keyboard-control$$
-  - '&mkp MB1'
 combos:
 - p: [11, 12]
   k: $$mdi:backspace-reverse-outline$$
