@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  QWERTY:
+  WIN:
   - $$mdi:keyboard-tab$$
   - '&as Q'
   - '&as W'
@@ -158,8 +158,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: WIN, h: toggle}
+  - {t: MAC, h: toggle}
   - {t: Gaming, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
@@ -203,20 +203,20 @@ layers:
   - W
   - E
   - R
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-up-bold$$
   - F1
   - F2
   - F3
   - F4
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: toggle}
+  - {t: WIN, h: toggle}
   - {t: '2', s: '@'}
   - {t: '1', s: '!'}
   - A
   - S
   - D
   - F
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-down-bold$$
   - F5
   - F6
   - F7
@@ -229,7 +229,7 @@ layers:
   - C
   - V
   - B
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -240,11 +240,60 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  MAC:
+  - $$mdi:keyboard-tab$$
+  - '&as Q'
+  - '&as W'
+  - '&as E'
+  - '&as R'
+  - '&as T'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&as Y'
+  - '&as U'
+  - '&as I'
+  - '&as O'
+  - '&as P'
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-esc$$
+  - '&as A'
+  - '&as S'
+  - '&as D'
+  - '&as F'
+  - '&as G'
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&as H'
+  - '&as J'
+  - '&as K'
+  - '&as L'
+  - '&as SEMI'
+  - '&as SQT'
+  - '&td0'
+  - '&as Z'
+  - '&as X'
+  - '&as C'
+  - '&as V'
+  - '&as B'
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&as N'
+  - '&as M'
+  - '&as COMMA'
+  - '&as DOT'
+  - '&as FSLH'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - PLAY PAUSE
+  - $$mdi:apple-keyboard-option$$
+  - SYMBOL
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:keyboard-space$$
+  - NAV
+  - $$mdi:apple-keyboard-control$$
+  - '&mkp MB1'
 combos:
 - p: [11, 12]
   k: $$mdi:backspace-reverse-outline$$
