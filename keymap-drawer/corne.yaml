@@ -173,7 +173,7 @@ layers:
   - '&as EQUAL'
   - '&as LEFT_BRACKET'
   - '&as RIGHT_BRACKET'
-  - '&as NON_US_BACKSLASH'
+  - '&as BACKSLASH'
   - {t: '$$mdi:transfer$$', type: trans}
   - F6
   - F7
