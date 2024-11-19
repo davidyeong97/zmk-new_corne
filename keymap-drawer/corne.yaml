@@ -110,7 +110,7 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - Ctl+ $$mdi:arrow-up-bold$$
+  - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
@@ -123,7 +123,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - Ctl+ $$mdi:arrow-down-bold$$
+  - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
